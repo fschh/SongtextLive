@@ -46,7 +46,7 @@ just install
 
 ### Lokale IP-Adresse hinterlegen
 
-Füge in der ``frontend/.ENV`` Datei deine lokale IP-Adresse hinzu, um die Anwendung im lokalen Netzwerk erreichbar zu machen.
+Erstelle eine ``frontend/.ENV`` Datei und füge deine lokale IP-Adresse hinzu, um die Anwendung im lokalen Netzwerk erreichbar zu machen.
 
 ```bash
 VITE_NODE_SERVER_IP = "deine.lokale.IP.Adresse"

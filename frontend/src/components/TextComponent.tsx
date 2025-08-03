@@ -7,7 +7,11 @@ function TextComponent() {
 
   useEffect(() => {
     // WebSocket zum Node.js Server
-    const server_ip = "192.168.178.50";
+    //const server_ip = "192.168.178.50";
+    let server_ip = import.meta.env.VITE_NODE_SERVER_IP;
+    if (!server_ip) {
+      server_ip = "localhost";
+    }
     const ws = new WebSocket("ws://" + server_ip + ":3001");
 
     ws.onclose = (event) => {

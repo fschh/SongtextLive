@@ -8,7 +8,7 @@ Folgende Software muss installiert sein:<br>
 ``node``<br>
 ``just``, um Befehle schnell ausführen zu können (nicht zwingend)
 
-Wenn Just nicht installiert ist, kann man die jeweiligen Befehle auch manuell ausführen.<br>
+Wenn Just nicht installiert ist, kann man die Befehle aus der Justfile auch manuell ausführen.<br>
 Fehlende Software wie folgt installieren:
 
 ### Windows
@@ -38,10 +38,18 @@ git clone https://github.com/fschh/SongtextLive.git
 cd SongtextLive
 ```
 
-## Node Module installieren
+### Node Module installieren
 
 ```bash
 just install
+```
+
+### Lokale IP-Adresse hinterlegen
+
+Füge in der ``frontend/.ENV`` Datei deine lokale IP-Adresse hinzu, um die Anwendung im lokalen Netzwerk erreichbar zu machen.
+
+```bash
+VITE_NODE_SERVER_IP = "deine.lokale.IP.Adresse"
 ```
 
 ## Anwendung starten

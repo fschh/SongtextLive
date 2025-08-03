@@ -1,5 +1,6 @@
 default:
     just serve &
+    sleep 2
     just frontend &
     just backend
 
